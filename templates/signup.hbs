@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regsitration form</title>
+    <style>
+      *{
+    box-sizing: border-box;
+}
+
+#div1{
+    padding: 16px;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    border: solid 1px;
+
+}
+
+input[type=text],input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+
+}
+
+hr{
+    border: 1px solid #f1f1f1;
+}
+
+#register{
+background-color: #04aa6d;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor:pointer;
+width: 100%;
+opacity: 0.9;
+
+
+}
+    </style>
+</head>
+<body>
+ <form action="/signup" method="post">
+  <div id="div1">
+    <h1 style="text-align: center;">Sign Up</h1>
+    <hr>
+    <label for="name">Name</label> <br>
+    <input type="text" name="username" id="name" placeholder="Enter Name"><br>
+    <label for="email" >Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter email"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" placeholder="Enter password"><br>
+    <button type="submit" id="register">Register</button>
+    <p style="text-align: center;">Already have an account?<a href="/login">Log in</a></p>
+  </div>
+ </form>
+    
+    
+</body>
+</html>

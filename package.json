@@ -1,0 +1,22 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon src/index.js -e js,hbs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "codemod": "^0.10.26",
+    "codemon": "^0.1.31-development",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.4.0"
+  }
+}

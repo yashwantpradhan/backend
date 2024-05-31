@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+    box-sizing: border-box;
+}
+
+#login{
+    padding: 16px;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    border: solid 1px;
+
+}
+
+input[type=text],input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+
+}
+
+hr{
+    border: 1px solid #f1f1f1;
+}
+
+#login_btn{
+background-color: #04aa6d;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor:pointer;
+width: 100%;
+opacity: 0.9;
+
+
+}</style>
+</head>
+<body>
+    <form action="/login" method="post">
+    <div id="login">
+        <h1 style="text-align: center;"> Login </h1> <hr>
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" placeholder="enter email"> <br>
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" placeholder="Enter password"> <br>
+        <button id="login_btn">Login</button>
+        <p style="text-align: center;">Don't have an account?<a href="/signup">Sign Up</a></p>
+    </div>
+  </form>
+    
+</body>
+</html>
